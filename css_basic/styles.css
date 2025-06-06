@@ -1,35 +1,54 @@
-/* Flexbox layout setup */
-
 body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  height: 100vh;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-main {
+header {
+  background-color: #004466;
+  color: white;
+  padding: 1em;
+}
+
+header ul {
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  flex: auto;
+  gap: 1.5em;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2em;
+}
+
+footer {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
 
 article {
-  flex: 2;
-  overflow-y: auto;
+  background: white;
+  border-radius: 8px;
   padding: 1em;
-  background-color: #fff;
+  margin: 1em 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 aside {
-  flex: 1;
-  overflow-y: auto;
+  background: #f1f1f1;
+  border-left: 3px solid #004466;
   padding: 1em;
-  background-color: #e6e6e6;
+  margin: 1em 0;
 }
 
-header,
-footer {
-  background-color: #ccc;
-  padding: 1em;
-  text-align: center;
+a {
+  color: #004466;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
